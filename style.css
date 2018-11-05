@@ -1,0 +1,168 @@
+body{
+    margin:0 20px;
+    padding: 0;
+    background-color: #849d8f;
+}
+.navigation{
+    display: flex;
+    height: 80px;
+}
+ul{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+}
+.main-navigation{
+    margin-right: auto;
+}
+.main-navigation>ul>li{
+    margin-right: 30px;
+}
+.main-navigation>ul>li>a{
+    color:#fff;
+    text-decoration: none;
+    border-bottom: #c6d9ce 1px solid;
+    font-size: 16px;
+}
+.logo img{
+    cursor: pointer;
+}
+.user-navigation>ul>li{
+    margin-right: 10px;
+}
+.search{
+    width: 33px;
+    height: 33px;
+    background-color:rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-image: url('img/loupe.svg');
+    background-position: center;
+    background-repeat:no-repeat; 
+    cursor: pointer;
+}
+.sign{
+    display:flex;
+    align-items: center;
+    color:#fff;
+    width: 90px;
+    height: 33px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.sign img{
+    margin:10px;
+}
+.basket{
+    display:flex;
+    align-items: center;
+    color:#fff;
+    width: 115px;
+    height: 33px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.basket img{
+    margin: 10px;
+}
+
+
+/* Slideshow container */
+.slider {
+  position: relative;
+  width: 100%;
+}
+.mySlides{
+    width: 650px; 
+    margin:auto;
+}
+
+/* Hide the images by default */
+.hide {
+    display: none;
+}
+
+/* Caption text */
+.text {
+    position: absolute;
+  color: #f2f2f2;
+  font-size: 60px;
+  width: 600px;
+  height: 110px;
+  left:50%;
+  margin-left:-300px;
+  text-align: center;
+  bottom:180px;
+}
+.slider button{
+    width: 280px;
+    height: 65px;
+    font-size: 32px;
+    border-radius:30px;
+    background-color: #ed5a3d;
+    color:#fff;
+    border:none;
+    box-shadow: 1px 3px #ab5948;
+    cursor:pointer;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dots{
+    width: 70px;
+    margin-right: auto;
+    position: relative;
+    bottom: 90px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.phone{
+    width: 200px;
+    position: absolute;
+    right:0;
+    color:#fff;
+    font-size: 14px;
+    text-align: right;
+}
+.phone>p:last-child{
+    font-size: 22px;
+    margin-top:5px;
+}
+.phone>p{
+    margin: 0;
+}
+
+
