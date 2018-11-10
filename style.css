@@ -200,7 +200,7 @@ ul{
     margin: 20px auto;
     padding: 0 10px;
 }
-.signin input[type="email"]::placeholder,.signin input[type="password"]::placeholder{
+ input[type="email"]::placeholder, input[type="password"]::placeholder{
     color:#b8b8b8;
 }
 .basket{
@@ -363,7 +363,7 @@ ul{
     display: grid;
     margin-top: 35px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: minmax(230px,auto);
     grid-column-gap: 25px;
     margin-bottom: 40px;
 }
@@ -403,6 +403,7 @@ ul{
     background-image: url(img/wafer.jpg);
     border-radius: 10px;
     padding: 30px 0;
+    margin-bottom: 40px;
 }
 .seo p{
     font-size: 24px;
@@ -424,4 +425,54 @@ ul{
 }
 .seo-flex span{
     margin:20px 0 0 10px ;
+}
+.newsmail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(220px,auto);
+    grid-column-gap: 25px;
+}
+.news{
+    background-image: url(img/raspb.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 15px;
+}
+.news a{
+    color:black;
+    font-size: 24px;
+    width: 300px;
+    display:block;
+}
+.mail{
+    background-image: url(img/mail.png);
+    border-radius: 15px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.mail p{
+    margin: 35px 25px;
+    font-size: 16px;
+    color: #8e8e8d;
+}
+.mail>input[type="email"]{
+    width: calc(100% - 220px);
+    height: 40px;
+    border-radius: 5px;
+    border:#d3d3d2 1px solid;
+    margin-left: 25px;
+    padding: 0 10px;
+}
+
+.mail>button{
+    width: 130px;
+    height: 45px;
+    background-color: #ef6140;
+    border: none;
+    color:#fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px; 
+    margin-left: 10px;
 }
