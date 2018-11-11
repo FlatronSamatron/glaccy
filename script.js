@@ -19,4 +19,3 @@ function currentSlide(n){
         document.body.style.backgroundColor ="#9e8c85";
     }
 }
-
