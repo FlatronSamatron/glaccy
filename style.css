@@ -8,10 +8,7 @@ body{
     background-color: #849d8f;
     font-family: Roboto;
 }
-header{
-    margin:0 20px;
-}
-.m20{
+header, .m20, footer{
     margin:0 20px;
 }
 .navigation{
@@ -206,7 +203,7 @@ ul{
     margin: 20px auto;
     padding: 0 10px;
 }
- input[type="email"]::placeholder, input[type="password"]::placeholder{
+ input[type="email"]::placeholder, input[type="password"]::placeholder,input[type="text"]::placeholder,textarea::placeholder{
     color:#b8b8b8;
 }
 .basket{
@@ -497,7 +494,7 @@ ul{
     right: 25px;
     border-radius: 10px;
     padding:0 20px;
-    border:1px solid #d3d3d3
+    border:1px solid #d3d3d3;
 }
 .adress-block p{
     color:#323232;
@@ -526,7 +523,85 @@ ul{
     font-size: 18px; 
     margin: 10px 10px;
 }
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social>ul{
+    width: 100px;
+}
+.social>ul>li{
+    margin-right: 10px;
+}
+.footer-menu{
+    
+}
+.footer-menu a{
+    display: block;
+    color:#fff;
+}
+.first,.second{
+    display: inline-block;
+}
+.first{width: 180px;}
+.second{width: 200px;}
 
+.form{
+    height: 440px;
+    width: 480px;
+    position: absolute;
+    background-color: #f8f7f4;
+    margin-left: calc(50% - 240px);
+    z-index: 100;
+    border-radius: 5px;
+    top:-450px;
+    border:1px solid #d3d3d3;
+}
+.form p{
+    margin-left: 24px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.form span{
+    float:right;
+    margin-right: 20px;
+    border:1px solid black;
+    padding:0 5px;
+    cursor: pointer;
+}
+.form input[type="email"],.form input[type="text"]{
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    border:#d3d3d2 1px solid;
+    display: block;
+    margin: 24px;
+    padding: 0 10px;
+}
+.form textarea{
+    width: 405px;
+    height: 150px;
+    margin-left: 24px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    border:#d3d3d2 1px solid;
+}
+.form button{
+    width: 140px;
+    height: 45px;
+    background-color: #ef6140;
+    border: none;
+    color:#fff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin:7px 25px;
+    font-size: 18px;
+    float: right;
+    box-shadow: 1px 2px #ab5948;
+}
 /*button setting*/
 button:hover{
     background-color: #f48268;

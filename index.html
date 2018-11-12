@@ -7,6 +7,15 @@
 </head>
 <body>
     <header>
+            <div class="form" id="forma">
+                    <form action="">
+                        <p>Мы обязательно вам ответим! <span onclick="formOut()">X</span></p>
+                        <input type="text" placeholder="Как вас зовут?">
+                        <input type="email" placeholder="Ваша почта для ответа?">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Напишите что нибуть"></textarea>
+                        <button>Отправить</button>
+                    </form>
+            </div>
         <div class="navigation">
         <nav class="main-navigation">
             <ul>
@@ -186,11 +195,31 @@
                     <p class="max">+38(063)753-53-53</p>
                     <p class="min">(c 10 до 20, ежедневно)</p>
                     </div>
-
-                    <button>Форма обратной связи</button>
+                    <button onclick="formAct()">Форма обратной связи</button>
                 </div>
         </div>
     </main>
+    <footer>
+        <div class="social">
+            <ul>
+                <li><a href=""><img src="img/twitter.svg" alt=""></a></li>
+                <li><a href=""><img src="img/instagram.svg" alt=""></a></li>
+                <li><a href=""><img src="img/fb.svg" alt=""></a></li>
+                <li><a href=""><img src="img/vk.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <div class="first">
+                <a href="">Для поставщиков</a>
+                <a href="">О производстве</a>
+            </div>
+            <div class="second">
+                <a href="">Наши документы</a>
+                <a href="">Экологические стандарты</a>
+            </div>
+        </div>
+        <img src="img/logo.svg" alt="">
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
