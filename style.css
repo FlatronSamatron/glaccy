@@ -111,14 +111,18 @@ ul{
 .divsearch{
     display:none;
     position: absolute;
-    top:58px;
+    top:55px;
     right: 255px;
     z-index: 100;
+    padding-top: 10px;
+}
+.divsearch form{
     width: 340px;
     height: 80px;
     background-color: #f8f7f4;
     border-radius: 5px;
     box-shadow: black -5px 10px 50px;
+    display: flex;
 }
 .divsearch input[type="search"]{
     width: 305px;
@@ -161,18 +165,23 @@ ul{
 
 .signin{
     position: absolute;
-    top: 58px;
+    top: 55px;
     right: 156px;
     z-index: 100;
+    display: none;
+    padding-top: 10px;
+}
+.signin form{
     height: 210px;
     width: 280px;
     background-color: #f8f7f4;
     border-radius: 5px;
-    display: none;
     box-shadow: black -5px 10px 50px;
+    display: flex;
+    flex-direction: column;
 }
 .signin button{
-    width: 100px;
+    width: 95px;
     height: 45px;
     background-color: #ef6140;
     border: none;
@@ -181,17 +190,18 @@ ul{
     cursor: pointer;
     margin-left:20px;
     font-size: 18px; 
+    margin-right: 5px;
 }
 
 .registr{
-    width: 155px;
-    height: 50px;
-    float: right;
+    display: flex;
+    flex-direction: row;
 }
 .signin a{
     display: block;
     margin: 3px;
     color:#5a5a59;
+    font-size: 15px;
 }
 
 .signin input[type="email"],.signin input[type="password"]{
@@ -200,7 +210,7 @@ ul{
     border-radius: 5px;
     border:#d3d3d2 1px solid;
     display: block;
-    margin: 20px auto;
+    margin: 15px auto;
     padding: 0 10px;
 }
  input[type="email"]::placeholder, input[type="password"]::placeholder,input[type="text"]::placeholder,textarea::placeholder{
