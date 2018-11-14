@@ -231,6 +231,10 @@ ul{
     margin: 10px;
 }
 
+/*MOBILE NAVIGATION*/
+.mobile-nav{
+    display:none;
+}
 
 /* Slideshow */
 .slider {
@@ -321,6 +325,7 @@ ul{
 }
 .phone>p{
     margin: 0;
+    text-shadow: #323232 1px 1px;
 }
 
 /*MAIN*/
@@ -328,7 +333,7 @@ ul{
     display: grid;
     margin-top: 35px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 230px;
+    grid-template-rows: minmax(230px,auto);
     grid-column-gap: 25px;
 }
 .raspbery{
@@ -470,7 +475,7 @@ ul{
     font-size: 16px;
     color: #8e8e8d;
 }
-.mail>input[type="email"]{
+.mail input[type="email"]{
     width: calc(100% - 220px);
     height: 40px;
     border-radius: 5px;
@@ -479,7 +484,7 @@ ul{
     padding: 0 10px;
 }
 
-.mail>button{
+.mail button{
     width: 130px;
     height: 45px;
     background-color: #ef6140;
@@ -622,39 +627,31 @@ button{
 }
 
 @media screen and (max-width:800px) {
-    body{
-        background: red;
-    }
     .main-navigation>ul>li{
         text-align: center;
     }
+    .mySlides{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        left:auto;
+        margin-left: auto;
+    }
     .additive{
-        display: grid;
-        margin-top: 35px;
         grid-template-columns: 1fr;
-        grid-template-rows: 230px;
         grid-row-gap: 25px;
     }
     .ice-cream{
-        display: grid;
-        margin-top: 35px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: minmax(230px,auto);
         grid-gap: 25px;
-        margin-bottom: 40px;
     }
     .seo-grid{
-        margin:20px;
-        display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         grid-gap: 20px;
-        margin-bottom: 0;
     }
-    .newsmail{
-        display: grid;
+    .newsmail{ 
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(220px,auto);
         grid-row-gap: 25px;
     }
     .mail button{
@@ -665,5 +662,58 @@ button{
     }
     .footer-menu{
         width: 200px;
+    }
+}
+@media screen and (max-width:500px){
+    header{
+        margin-bottom: 100px;
+    }
+    nav{
+        display: none;
+    }
+    .dots{
+        bottom: -70px;
+        margin: auto;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .news a{
+        width: 100%;
+    }
+    .mail-email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .mail input[type="email"]{
+        width: calc(250px);
+        margin-left: 0;
+    }
+    .mail button{
+        margin-top: 20px;
+    }
+    .map{
+        display: none;
+    }
+    .footer-menu a{
+        font-size: 10px;
+    }
+    .footer-menu{
+        width: 100px;
+    }
+    .first,.second{
+        width: auto;
+    }
+
+}
+@media screen and (max-width:330px){
+    header{
+        margin-bottom: 150px;
+    }
+    .dots{
+        bottom: -125px;
+        margin: auto;
     }
 }
