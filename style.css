@@ -2,6 +2,7 @@
     font-family: Roboto; /* Имя шрифта */
     src: url(fonts/roboto.woff); /* Путь к файлу со шрифтом */
    }
+
 body{
     margin:0;
     padding: 0;
@@ -210,7 +211,7 @@ ul{
     border-radius: 5px;
     border:#d3d3d2 1px solid;
     display: block;
-    margin: 15px auto;
+    margin: 16px auto;
     padding: 0 10px;
 }
  input[type="email"]::placeholder, input[type="password"]::placeholder,input[type="text"]::placeholder,textarea::placeholder{
@@ -545,9 +546,6 @@ footer{
 .social>ul>li{
     margin-right: 10px;
 }
-.footer-menu{
-    
-}
 .footer-menu a{
     display: block;
     color:#fff;
@@ -621,4 +619,51 @@ button:active{
 }
 button{
     outline: none;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        background: red;
+    }
+    .main-navigation>ul>li{
+        text-align: center;
+    }
+    .additive{
+        display: grid;
+        margin-top: 35px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 230px;
+        grid-row-gap: 25px;
+    }
+    .ice-cream{
+        display: grid;
+        margin-top: 35px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(230px,auto);
+        grid-gap: 25px;
+        margin-bottom: 40px;
+    }
+    .seo-grid{
+        margin:20px;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        margin-bottom: 0;
+    }
+    .newsmail{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(220px,auto);
+        grid-row-gap: 25px;
+    }
+    .mail button{
+        margin-bottom: 25px;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .footer-menu{
+        width: 200px;
+    }
 }
